@@ -12,4 +12,11 @@
       color: #fff;
     }
   }
+
+  &-outline-primary {
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }
