@@ -26,6 +26,10 @@
 
     {% comment %}data in JS{% endcomment %}
     {% include js-data-brand-logos.html %}
+    {% include js-data-site.html %}
+    {% include js-data-post.html %}
+    {% include js-data-tags.html %}
+    {% include js-data-page.html %}
 
     {% comment %} Third-party libraries {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -41,11 +45,18 @@
     <script src="{{ "/js/modules/session.js" | absolute_url }}"></script>
     <script src="{{ "/js/modules/accessibility.js" | absolute_url }}"></script>
     <script src="{{ "/js/modules/support-form.js" | absolute_url }}"></script>
+    <script src="{{ "/js/modules/navigation.js" | absolute_url }}"></script>
+    <script src="{{ "/js/modules/breadcrumb.js" | absolute_url }}"></script>
 
     <script>
 
     Accessibility.init();
     Branding.init();
+    Navigation.init({
+      layout: '{{ page.layout }}',
+      tag: '{{ page.tag }}',
+      postData: window.post,
+    });
 
     // fetch the parameters passed via URL
     var urlParams = new URLSearchParams(window.location.search);
