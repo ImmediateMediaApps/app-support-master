@@ -17,3 +17,7 @@ li {
 a {
   color: $blue; // 7.51:1 ratio with background colour
 }
+
+p {
+  overflow-wrap: break-word;
+}
