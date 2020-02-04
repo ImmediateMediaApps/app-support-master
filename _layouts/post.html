@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-{% assign key = page.categories[0] %}
-{% assign url = '/category/' | append: page.categories[0] %}
 
-<p class="btn-back">Category: <a href="{{ url | absolute_url }}">{{ site.data.categories[ key ] }}</a></p>
+{% include breadcrumb.html %}
 
 <h2>{{ page.title }}</h2>
 
@@ -12,4 +10,6 @@ layout: default
   {{ content }}
 </div>
 
-{% include already-tried-this.html %}
+{% if page.showcontact %}
+  {% include already-tried-this.html %}
+{% endif %}
