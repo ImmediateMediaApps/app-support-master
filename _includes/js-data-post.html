@@ -1,0 +1,16 @@
+{% if page.layout == 'post' %}
+
+<script>
+
+  window.post = {
+    title: '{{ page.title }}',
+    tags: []
+  };
+
+  {% for tag in page.tags %}
+    window.post.tags.push('{{ tag }}');
+  {% endfor %}
+
+</script>
+
+{% endif %}

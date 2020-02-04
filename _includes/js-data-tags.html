@@ -1,0 +1,6 @@
+<script>
+  window.tags = {};
+  {% for category in site.data.categories %}
+    window.tags['{{ category[0] }}'] = '{{ category[1] }}';
+  {% endfor %}
+</script>
