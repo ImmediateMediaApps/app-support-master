@@ -1,0 +1,14 @@
+{% for tag in site.tags %}
+  {% if tag[0] == page.tag %}
+    {% for post in tag[1] %}
+      <article id="post-{{ post.title | slugify }}" class="article-full">
+        <h3>{{ post.title }}</h3>
+        {{ post.content }}
+        {% if post.showcontact %}
+          {% include already-tried-this.html %}
+        {% endif %}
+      </article>
+      <hr />
+    {% endfor %}
+  {% endif %}
+{% endfor %}

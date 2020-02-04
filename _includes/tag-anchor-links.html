@@ -1,0 +1,9 @@
+<ul class="link-list hide-dots use-icons">
+{% for tag in site.tags %}
+  {% if tag[0] == page.tag %}
+    {% for post in tag[1] %}
+      <li class="link-list__item"><a href="#post-{{ post.title | slugify }}"><i class="link-list__icon fa fa-question-circle"></i>{{post.title}}</a></li>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</ul>
