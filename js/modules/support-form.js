@@ -129,17 +129,20 @@ var form = new Vue({
 
       } else {
 
-        // grab the target URL from the form
-        var actionURL = this.$el.querySelector('form').getAttribute('action');
-
         // submit the form
         new HttpRequest({
           method: 'POST',
-          url: actionURL,
+          url: window.site.formurl,
           data: formData,
         })
         .then(function(response) {
-          console.log('form submitted successfully', response);
+
+          // if the request was successful
+          if (response.hasOwnProperty('status') && response.status === "success") {
+
+            // redirect the user to the success page
+            window.location = window.site.baseurl + '/submit-request-success.html';
+          }
         })
         .catch(function(err) {
           console.log('problem submitting the form', err);
