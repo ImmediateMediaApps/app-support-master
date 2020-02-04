@@ -1,0 +1,16 @@
+<nav aria-label="breadcrumb">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ site.baseurl }}/">Home</a>
+    </li>
+    <li class="breadcrumb-item" v-if="categoryText && categoryText.length">
+      <template v-if="categoryLink.length">
+        <a v-bind:href="categoryLink">(( categoryText ))</a>
+      </template>
+      <template v-else>
+        (( categoryText ))
+      </template>
+    </li>
+    <li class="breadcrumb-item" v-if="isSearchPage">Search</li>
+  </ul>
+</nav>
