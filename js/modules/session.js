@@ -15,15 +15,16 @@ function Session(opts) {
   // fetch existing values stored earlier in the session
   this.sync();
 
-  // update the session values with new data, if any new data is provided
-  this.platform = opts.platform || this.platform;
-  this.device = opts.device || this.device;
-  this.appversion = opts.appversion || this.appversion;
-  this.subscriptionstatus = opts.subscriptionstatus || this.subscriptionstatus;
-  this.subscriberid = opts.subscriberid || this.subscriberid;
-  this.purchasemethod = opts.purchasemethod || this.purchasemethod;
-  this.brand = opts.brand || this.brand;
-  this.osversion = opts.osversion || this.osversion;
+  // update the session values with new data, if any new data is provided. Set
+  // value to null if value after syncing is undefined
+  this.platform = opts.platform || this.platform || null;
+  this.device = opts.device || this.device || null;
+  this.appversion = opts.appversion || this.appversion || null;
+  this.subscriptionstatus = opts.subscriptionstatus || this.subscriptionstatus || null;
+  this.subscriberid = opts.subscriberid || this.subscriberid || null;
+  this.purchasemethod = opts.purchasemethod || this.purchasemethod || null;
+  this.brand = opts.brand || this.brand || null;
+  this.osversion = opts.osversion || this.osversion || null;
 
   // save the session data
   this.save();
