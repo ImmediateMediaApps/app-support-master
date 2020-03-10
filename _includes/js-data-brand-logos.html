@@ -2,6 +2,6 @@
   window.brandLogos = {};
 
   {% for logo in site.data.logos %}
-    window.brandLogos['{{logo.brand}}'] = '{{logo.url | absolute_url }}';
+    window.brandLogos['{{logo.brand}}'] = '{{logo.url | relative_url }}';
   {% endfor %}
 </script>

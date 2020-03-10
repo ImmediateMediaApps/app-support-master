@@ -6,7 +6,7 @@ title: Feedback
   <div class="row">
     <div class="col-12">
 
-      <a href="{{ "/" | absolute_url }}" class="btn-back">Back</a>
+      <a href="{{ "/" | relative_url }}" class="btn-back">Back</a>
       <h2>Leave feedback</h2>
       <p>If you'd like to offer a suggestion for how the app could be improved, or if you've been enjoying using the app and would like to tell us, we'd love to hear from you!</p>
 
@@ -14,7 +14,7 @@ title: Feedback
         <strong>Please note:</strong> we are unable to reply to messages received through this form.
       </div>
 
-      <form method="GET" action="{{ "/feedback-success.html" | absolute_url }}">
+      <form method="GET" action="{{ "/feedback-success.html" | relative_url }}">
         <div class="form-group">
           <label for="message">Message</label>
           <textarea name="message" class="form-control"></textarea>

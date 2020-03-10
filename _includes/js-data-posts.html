@@ -6,7 +6,7 @@
       {
         title: `{{ post.title }}`,
         content: `{{ post.content }}`,
-        url: `{{ post.url | absolute_url }}`,
+        url: `{{ post.url | relative_url }}`,
         popular: {{ post.popular }},
       },
 

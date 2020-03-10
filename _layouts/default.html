@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>{{ page.title }}</title>
-    <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | absolute_url }}" sizes="32x32" />
-    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absolute_url }}">
+    <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32" />
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relative_url }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ "css/style.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relative_url }}">
     <script>var htmlClasses = document.getElementsByTagName('html')[0].classList;htmlClasses.remove('nojs');htmlClasses.add('js');</script>
   </head>
   <body class="ios">
@@ -35,18 +35,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
     {% comment %} Application libraries {% endcomment %}
-    <script src="{{ "/js/libs/party.js" | absolute_url }}"></script>
-    <script src="{{ "/js/libs/cookie.js" | absolute_url }}"></script>
-    <script src="{{ "/js/libs/http-request.js" | absolute_url }}"></script>
-    <script src="{{ "/js/libs/simple-reveal.js" | absolute_url }}"></script>
+    <script src="{{ "/js/libs/party.js" | relative_url }}"></script>
+    <script src="{{ "/js/libs/cookie.js" | relative_url }}"></script>
+    <script src="{{ "/js/libs/http-request.js" | relative_url }}"></script>
+    <script src="{{ "/js/libs/simple-reveal.js" | relative_url }}"></script>
 
     {% comment %} Application modules {% endcomment %}
-    <script src="{{ "/js/modules/branding.js" | absolute_url }}"></script>
-    <script src="{{ "/js/modules/session.js" | absolute_url }}"></script>
-    <script src="{{ "/js/modules/accessibility.js" | absolute_url }}"></script>
-    <script src="{{ "/js/modules/support-form.js" | absolute_url }}"></script>
-    <script src="{{ "/js/modules/navigation.js" | absolute_url }}"></script>
-    <script src="{{ "/js/modules/breadcrumb.js" | absolute_url }}"></script>
+    <script src="{{ "/js/modules/branding.js" | relative_url }}"></script>
+    <script src="{{ "/js/modules/session.js" | relative_url }}"></script>
+    <script src="{{ "/js/modules/accessibility.js" | relative_url }}"></script>
+    <script src="{{ "/js/modules/support-form.js" | relative_url }}"></script>
+    <script src="{{ "/js/modules/navigation.js" | relative_url }}"></script>
+    <script src="{{ "/js/modules/breadcrumb.js" | relative_url }}"></script>
 
     <script>
 

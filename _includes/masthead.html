@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <a href="{{ "/" | absolute_url }}">
-          <img src="{{ "/img/logos/logo_blue.gif" | absolute_url }}" height="80" class="masthead__logo">
+        <a href="{{ "/" | relative_url }}">
+          <img src="{{ "/img/logos/logo_blue.gif" | relative_url }}" height="80" class="masthead__logo">
         </a>
         {% include accessibility-controls.html %}
       </div>
     </div>
   </div>
-  <a href="{{ "/search.html" | absolute_url }}" class="masthead__search">
+  <a href="{{ "/search.html" | relative_url }}" class="masthead__search">
     <i class="fa fa-search" aria-hidden="true"></i>
   </a>
 </header>
