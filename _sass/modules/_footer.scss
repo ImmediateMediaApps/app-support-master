@@ -1,6 +1,7 @@
 .site-footer {
   background-color: #333;
-  padding-top: 1rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   &__navigation {
 
@@ -12,10 +13,36 @@
 
   &__navigation-list-item {
     list-style: none;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $width-tablet) {
+      display: inline-block;
+      margin-right: 10px;
+    }
   }
 
   &__navigation-link {
     color: #fff;
     text-decoration: underline;
+    font-size: 14px;
+    display: block;
+    line-height: 44px;
+  }
+
+  &__logo {
+    width: 129px;
+    height: 50px;
+    margin-bottom: 25px;
+    display: block;
+  }
+
+  &__partner-logo {
+    width: 80px;
+    height: auto;
+  }
+
+  p {
+    color: #fff;
+    font-size: 14px;
   }
 }

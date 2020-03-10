@@ -1,14 +1,29 @@
 <footer class="site-footer">
   <div class="container">
-      <div class="row">
-          <div class="col-12">
-            <nav class="site-footer__navigation">
-                <ul class="site-footer__navigation-list">
-                  <li class="site-footer__navigation-list-item"><a href="{{ "/feedback" | absolute_url }}" class="site-footer__navigation-link">Leave app feedback</a></li>
-                  <li class="site-footer__navigation-list-item"><a href="#" class="site-footer__navigation-link">Privacy policy</a></li>
-                </ul>
-            </nav>
-          </div>
+    <div class="row">
+      <div class="col-2">
+        <img src="{{ "/img/immediate-media-logo.png" | absolute_url }}" width="129" height="50" class="site-footer__logo" />
       </div>
-  </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <p class="bbc-brand-specific">This website is published by Immediate Media Company Limited under licence from BBC Studios Distribution.</p>
+        <p class="bbc-studios-brand-specific">This website is published by Immediate Media Company Limited under licence from BBC Studios Distribution.</p>
+        <nav class="site-footer__navigation">
+          <ul class="site-footer__navigation-list">
+            <li class="site-footer__navigation-list-item"><a href="https://policies.immediate.co.uk/privacy/" target="_blank" class="site-footer__navigation-link">Privacy policy</a></li>
+            <li class="site-footer__navigation-list-item"><a href="https://policies.immediate.co.uk/cookies-policy/" target="_blank" class="site-footer__navigation-link">Cookie policy</a></li>
+            <li class="site-footer__navigation-list-item"><a href="http://www.immediate.co.uk/terms-and-conditions/" class="site-footer__navigation-link">Terms & conditions</a></li>
+          </ul>
+        </nav>
+        <p>&copy; Immediate Media Company Ltd 2020.</p>
+      </div>
+      <div class="col-md-2 align-right">
+        <img src="{{ "/img/bbc-logo.jpg" | absolute_url }}" class="site-footer__partner-logo bbc-brand-specific" width="80" height="39" />
+        <img src="{{ "/img/bbc-studios-logo.jpg" | absolute_url }}" class="site-footer__partner-logo bbc-studios-brand-specific" width="80" height="60" />
+      </div>
+    </div>
+
+    </div>
+
 </footer>

@@ -42,3 +42,28 @@
     display: none;
   }
 }
+
+.bbc-brand-specific {
+  display: none;
+
+  .brand-hi &,
+  .brand-mu &,
+  .brand-cf &,
+  .brand-gw &,
+  .brand-gf &,
+  .brand-rt &,
+  .brand-sn &,
+  .brand-tg &,
+  .brand-wdytya &,
+  .brand-wh & {
+    display: block;
+  }
+}
+
+.bbc-studios-brand-specific {
+  display: none;
+
+  .brand-sf & {
+    display: block;
+  }
+}
