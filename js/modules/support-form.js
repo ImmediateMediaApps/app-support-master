@@ -39,6 +39,7 @@ var form = new Vue({
         purchasemethod: null,
         description: '',
         sendcopy: false,
+        brand: '',
       }
     }
   },
@@ -53,7 +54,7 @@ var form = new Vue({
      */
     validate: function(formData) {
 
-      var requiredFieldNames = ['name', 'email', 'description'];
+      var requiredFieldNames = ['name', 'email', 'brand', 'description'];
       var fieldNamesWithErrors = [];
 
       if (!isValidText(formData.name)) {
@@ -62,6 +63,10 @@ var form = new Vue({
 
       if (!isValidEmail(formData.email)) {
         fieldNamesWithErrors.push('email');
+      }
+
+      if (!isValidText(formData.brand)) {
+        fieldNamesWithErrors.push('brand');
       }
 
       if (!isValidText(formData.description)) {
@@ -184,6 +189,7 @@ var form = new Vue({
       this.formValues.subscriptionstatus = sessionData.subscriptionstatus;
       this.formValues.subscriberid = sessionData.subscriberid;
       this.formValues.purchasemethod = sessionData.purchasemethod;
+      this.formValues.brand = window.brands[sessionData.brand].title;
 
       // state that the user's device data has been captured
       this.devicedatacaptured = true;

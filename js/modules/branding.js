@@ -29,10 +29,10 @@ var Branding = {
    * @param  {String} brand Identifier of the brand e.g. 'gw' for Gardeners' World
    * @return {void}
    */
-  apply: function(brand) {
+  apply: function(brandID) {
 
     // if the cookie doesn't exist, bail
-    if (!brand) {
+    if (!brandID) {
       return;
     }
 
@@ -40,12 +40,12 @@ var Branding = {
     Branding.clearBodyClasses();
 
     // add the body class for the brand
-    document.body.classList.add('brand-' + brand);
+    document.body.classList.add('brand-' + brandID);
 
     // swap out the masthead logo for the branded version
-    if (brand in window.brandLogos) {
+    if (brandID in window.brands) {
       var mastheadLogo = document.querySelector('.masthead__logo');
-      mastheadLogo.src = window.brandLogos[brand];
+      mastheadLogo.src = window.brands[brandID].logo;
     }
   },
 

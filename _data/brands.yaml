@@ -1,0 +1,87 @@
+- id: default
+  logo: "/img/logos/logo_blue.gif"
+  title: ""
+- id: 220
+  logo: "/img/logos/220-triathlon-logo.svg"
+  title: "220 Triathlon"
+- id: gf
+  logo: "/img/logos/bbc-good-food-logo.svg"
+  title: "BBC Good Food"
+- id: gw
+  logo: "/img/logos/bbc-gardeners-world-logo-blk.png"
+  title: "BBC Gardeners World"
+- id: tg
+  logo: "/img/logos/bbc-top-gear-logo.svg"
+  title: "BBC Top Gear"
+- id: cap
+  logo: "/img/logos/cardmaking-papercraft-logo.svg"
+  title: "Cardmaking & Papercraft"
+- id: cf
+  logo: "/img/logos/countryfile-logo.svg"
+  title: "BBC Countryfile"
+- id: cp
+  logo: "/img/logos/cycling-plus-logo.svg"
+  title: "Cycling Plus"
+- id: cc
+  logo: "/img/logos/cross-stitch-crazy-logo.svg"
+  title: "Cross Stitch Crazy"
+- id: sf
+  logo: "/img/logos/science-focus-logo.svg"
+  title: "BBC Science Focus"
+- id: gi
+  logo: "/img/logos/gardens-illustrated-logo.svg"
+  title: "Gardens Illustrated"
+- id: ha
+  logo: "/img/logos/homes-antiques-logo.svg"
+  title: "Homes & Antiques"
+- id: hi
+  logo: "/img/logos/bbc-history-logo.svg"
+  title: "BBC History"
+- id: im
+  logo: "/img/logos/in-the-moment-logo.svg"
+  title: "In the Moment"
+- id: tk
+  logo: "/img/logos/the-knitter-logo.svg"
+  title: "The Knitter"
+- id: lp
+  logo: "/img/logos/lonely-planet-logo.svg"
+  title: "Lonely Planet"
+- id: lpq
+  logo: "/img/logos/love-patchwork-quilting-logo.svg"
+  title: "Love Patchwork & Quilting"
+- id: mbuk
+  logo: "/img/logos/mbuk-logo.svg"
+  title: "Mountain Biking UK"
+- id: mm
+  logo: "/img/logos/mollie-makes-logo.svg"
+  title: "Mollie Makes"
+- id: mu
+  logo: "/img/logos/bbc-music-logo.svg"
+  title: "BBC Music"
+- id: pi
+  logo: "/img/logos/papercraft-inspirations-logo.svg"
+  title: "Papercraft Inspirations"
+- id: rt
+  logo: "/img/logos/radio-times-logo.svg"
+  title: "Radio Times"
+- id: sc
+  logo: "/img/logos/simply-crochet-logo.svg"
+  title: "Simply Crochet"
+- id: ss
+  logo: "/img/logos/simply-sewing-logo.svg"
+  title: "Simply Sewing"
+- id: sk
+  logo: "/img/logos/simply-knitting-logo.svg"
+  title: "Simply Knitting"
+- id: sn
+  logo: "/img/logos/sky-at-night-logo.svg"
+  title: "BBC Sky at Night"
+- id: wdytya
+  logo: "/img/logos/who-do-you-think-you-are-logo.svg"
+  title: "Who Do You Think You Are?"
+- id: wh
+  logo: "/img/logos/bbc-world-histories-logo.svg"
+  title: "BBC World Histories"
+- id: woxs
+  logo: "/img/logos/world-of-cross-stitching-logo.svg"
+  title: "The World of Cross Stitching"

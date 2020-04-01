@@ -1,0 +1,10 @@
+<script>
+  window.brands = {
+    {% for brand in site.data.brands %}
+      {{brand.id}}: {
+        logo: '{{brand.logo | relative_url }}',
+        title: '{{brand.title}}',
+      },
+    {% endfor %}
+  };
+</script>
