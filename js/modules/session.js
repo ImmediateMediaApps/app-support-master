@@ -25,6 +25,8 @@ function Session(opts) {
   this.purchasemethod = opts.purchasemethod || this.purchasemethod || null;
   this.brand = opts.brand || this.brand || null;
   this.osversion = opts.osversion || this.osversion || null;
+  this.sdkversion = opts.sdkversion || this.sdkversion || null;
+  this.webviewversion = opts.webviewversion || this.webviewversion || null;
 
   // save the session data
   this.save();
@@ -46,6 +48,8 @@ Session.prototype.getData = function() {
     purchasemethod: this.purchasemethod,
     brand: this.brand,
     osversion: this.osversion,
+    sdkversion: this.sdkversion,
+    webviewversion: this.webviewversion,
   }
 };
 
@@ -63,6 +67,8 @@ Session.prototype.allowedVariables = [
   'purchasemethod',
   'brand',
   'osversion',
+  'sdkversion',
+  'webviewversion',
 ];
 
 /**

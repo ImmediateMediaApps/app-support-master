@@ -189,6 +189,8 @@ var form = new Vue({
       this.formValues.subscriptionstatus = sessionData.subscriptionstatus;
       this.formValues.subscriberid = sessionData.subscriberid;
       this.formValues.purchasemethod = sessionData.purchasemethod;
+      this.formValues.sdkversion = sessionData.sdkversion;
+      this.formValues.webviewversion = sessionData.webviewversion;
 
       if ((sessionData.brand) &&
           (window.brands.hasOwnProperty(sessionData.brand)) &&
