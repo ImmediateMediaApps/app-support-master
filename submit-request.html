@@ -3,168 +3,15 @@ layout: default
 title: Submit a support request
 ---
 <h2>Submit a support request</h2>
-<p>If you've been unable to find an answer to your question, please fill in this form and a member of the support team can assist you.</p>
-<div class="alert alert-warning" role="alert">
+<p class="nojs-hide">If you've been unable to find an answer to your question, please fill in this form and a member of the support team can assist you.</p>
+<div class="alert alert-warning nojs-hide" role="alert">
   <strong>Note:</strong> it can take up to 48 hours to receive a response.
 </div>
 
 <noscript>
-  <form>
-    <div class="row no-gutters">
-      <div class="col-sm-6">
-        <fieldset>
-          <legend>Your details</legend>
-          <div class="form-group">
-            <label for="">Name<sup class="required">*</sup></label>
-            <input type="text" class="form-control" name="name" value="">
-          </div>
-          <div class="form-group">
-            <label for="">Email address<sup class="required">*</sup></label>
-            <input type="email" class="form-control" name="email" value="">
-          </div>
-          <div class="form-group">
-            <label for="">Magazine<sup class="required">*</sup></label>
-            <select name="brand" class="form-control">
-              <option value="">Please select...</option>
-              <optgroup label="Crafts">
-                <option value="Love Embroidery">Love Embroidery</option>
-                <option value="Simply Crochet">Simply Crochet</option>
-                <option value="Today's Quilter">Today's Quilter</option>
-                <option value="Simply Sewing">Simply Sewing</option>
-                <option value="Simply Knitting">Simply Knitting</option>
-                <option value="Mollie Makes">Mollie Makes</option>
-                <option value="The Knitter">The Knitter</option>
-                <option value="Today's Quilter">Today's Quilter</option>
-                <option value="Love Patchwork & Quilting">Love Patchwork & Quilting</option>
-                <option value="The World of Cross Stitching">The World of Cross Stitching</option>
-                <option value="Cardmaking & Papercraft">Cardmaking & Papercraft</option>
-                <option value="Cross Stitch Crazy">Cross Stitch Crazy</option>
-                <option value="Cross Stitch Gold">Cross Stitch Gold</option>
-                <option value="Papercraft Inspirations">Papercraft Inspirations</option>
-              </optgroup>
-              <optgroup label="Food & Travel">
-                <option value="BBC Good Food">BBC Good Food</option>
-                <option value="Lonely Planet">Lonely Planet</option>
-                <option value="olive">olive</option>
-                <option value="BBC Easy Cook">BBC Easy Cook</option>
-              </optgroup>
-              <optgroup label="History">
-                <option value="BBC History">BBC History</option>
-                <option value="Who Do You Think You Are?">Who Do You Think You Are?</option>
-                <option value="BBC History Revealed">BBC History Revealed</option>
-                <option value="BBC World Histories">BBC World Histories</option>
-              </optgroup>
-              <optgroup label="Home & Garden">
-                <option value="BBC Gardeners World">BBC Gardeners World</option>
-                <option value="Homes & Antiques">Homes & Antiques</option>
-                <option value="Gardens Illustrated">Gardens Illustrated</option>
-                <option value="Your Home">Your Home</option>
-                <option value="Home Style">Home Style</option>
-                <option value="Essential Kitchen Bathroom Bedroom">Essential Kitchen Bathroom Bedroom</option>
-              </optgroup>
-              <optgroup label="Science & Nature">
-                <option value="BBC Science Focus">BBC Science Focus</option>
-                <option value="BBC Countryfile">BBC Countryfile</option>
-                <option value="BBC Wildlife">BBC Wildlife</option>
-                <option value="BBC Sky at Night">BBC Sky at Night</option>
-              </optgroup>
-              <optgroup label="Sports">
-                <option value="Cycling Plus">Cycling Plus</option>
-                <option value="Mountain Biking UK">Mountain Biking UK</option>
-                <option value="220 Triathlon">220 Triathlon</option>
-                <option value="Match of the Day">Match of the Day</option>
-              </optgroup>
-              <optgroup label="Wellbeing">
-                <option value="In the Moment">In the Moment</option>
-              </optgroup>
-              <optgroup label="TV & Music">
-                <option value="BBC Music">BBC Music</option>
-                <option value="Radio Times">Radio Times</option>
-              </optgroup>
-              <option value="Other">I have a special edition or my magazine is not listed above</option>
-            </select>
-          </div>
-        </fieldset>
-      </div>
-      <div class="col-sm-12">
-        <fieldset>
-          <legend>Your account and device info</legend>
-
-          <div class="alert alert-info">
-            This section is optional, but any information you are able to provide will help to resolve your issue more quickly
-          </div>
-
-          <table class="table">
-            <tbody>
-              <tr>
-                <td><label for="field-platform">Platform</label></td>
-                <td>
-                  <select name="platform" class="form-control" id="field-platform">
-                    <option value="-1">Please select...</option>
-                    <option value="ios">iOS</option>
-                    <option value="android">Android</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><label for="field-device">Device</label></td>
-                <td><input type="text" class="form-control" name="device" id="field-device" /></td>
-              </tr>
-              <tr>
-                <td><label for="field-osversion">OS version</label></td>
-                <td><input type="text" class="form-control" name="osversion" id="field-osversion" /></td>
-              </tr>
-              <tr>
-                <td><label for="field-appversion">App version</label></td>
-                <td><input type="text" class="form-control" name="appversion" id="field-appversion" /></td>
-              </tr>
-              <tr>
-                <td><label for="field-subscriptionstatus">Do you currently have a subscription?</label></td>
-                <td>
-                  <select class="form-control" name="subscriptionstatus" id="field-subscriptionstatus">
-                    <option value="-1">Please select...</option>
-                    <option value="subscriber">Yes</option>
-                    <option value="nonsubscriber">No</option>
-                    <option value="notsure">Not sure</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><label for="field-subscriberid">Subscriber no.</label></td>
-                <td><input type="text" class="form-control" name="subscriberid" id="field-subscriberid" /></td>
-              </tr>
-              <tr>
-                <td><label for="field-purchasemethod">Purchase method</label></td>
-                <td>
-                  <select class="form-control" name="purchasemethod" id="field-purchasemethod">
-                    <option value="-1">Please select...</option>
-                    <option value="inapp">In-app purchase</option>
-                    <option value="buysubscriptions">Purchased on buysubscriptions.com</option>
-                  </select>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </fieldset>
-
-        <fieldset>
-          <legend>Your issue</legend>
-          <div class="form-group">
-            <label>Describe the problem<sup class="required">*</sup></label>
-            <textarea name="description" class="form-control"></textarea>
-          </div>
-        </fieldset>
-
-        <div class="align-right">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="sendcopy">
-            <label for="">Email a copy of this message to my inbox</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Send</button>
-        </div>
-      </div>
-    </div>
-  </form>
+  <div class="alert alert-danger" role="alert">
+    <strong>Javascript is disabled</strong>.<br /> This form cannot displayed when Javascript is disabled, please kindly enable.
+  </div>
 </noscript>
 
 <div class="form-component nojs-hide">
@@ -292,19 +139,21 @@ title: Submit a support request
                 </td>
               </tr>
               <tr>
-                <td><label for="field-subscriberid">Subscriber no.</label></td>
+                <td><label for="field-subscriberid">Subscriber no. (if you have one)</label></td>
                 <td><input type="text" class="form-control" name="subscriberid" id="field-subscriberid" v-model="formValues.subscriberid" /></td>
               </tr>
               <tr>
-                <td><label for="field-purchasemethod">Purchase method</label></td>
+                <td><label for="field-purchasemethod">Subscription method</label></td>
                 <td>
                   <select class="form-control" name="purchasemethod" id="field-purchasemethod" v-model="formValues.purchasemethod">
                     <option value="-1">Please select...</option>
                     <option value="in-app">In-app purchase</option>
                     <option value="buysubscriptions">Purchased on buysubscriptions.com</option>
+                    <option value="na">N/A</option>
                   </select>
                 </td>
               </tr>
+              {% include additional-support-request-device-fields.html %}
             </tbody>
           </table>
         </fieldset>
@@ -321,10 +170,6 @@ title: Submit a support request
         </fieldset>
 
         <div class="align-right">
-          <!--<div class="form-check">
-            <input class="form-check-input" type="checkbox" id="field-sendcopy" v-model="formValues.sendcopy">
-            <label for="field-sendcopy">Email a copy of this message to my inbox</label>
-          </div>-->
           <button type="submit" class="btn btn-primary">Send</button>
         </div>
       </div>
