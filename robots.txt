@@ -1,0 +1,3 @@
+# Hide the support form
+User-agent: Googlebot
+Disallow: /submit-request.html
